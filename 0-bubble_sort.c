@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 /**
- * bubble_sort - sorts an array of integers using bubble sort algorithm.
+ *bubble_sort - sorts an array of integers using bubble sort algorithm.
  *@array: array of integers.
  *@size: size of array.
  */
