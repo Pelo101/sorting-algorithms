@@ -49,5 +49,5 @@ void insertion_sort_list(listint_t **list)
 		}
 		curr_node = curr_node->next;
 	}
-	print_list(*list);
+
 }
