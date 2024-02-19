@@ -18,9 +18,7 @@ void selection_sort(int *array, size_t size)
 	if (array == NULL)
 		return;
 
-
-
-	for (i = 0; i < size - 1 && count < 7; i++)
+	for (i = 0; i < size - 1; i++)
 	{
 
 		idx = i;
@@ -37,7 +35,7 @@ void selection_sort(int *array, size_t size)
 		array[i] = array[idx];
 		array[idx] = temp;
 
-		count++;
+	
 		print_array(array, size);
 
 
