@@ -13,12 +13,11 @@ void selection_sort(int *array, size_t size)
 
 	size_t i, j;
 	int idx, temp;
-	int count = 0;
 
 	if (array == NULL)
 		return;
 
-	for (i = 0; i < size - 1; i++)
+	for (i = 0; i < 6 && i < size - 1; i++)
 	{
 
 		idx = i;
