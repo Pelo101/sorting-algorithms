@@ -11,13 +11,13 @@
 void selection_sort(int *array, size_t size)
 {
 
-	size_t i, j;
-	int idx, temp;
+	size_t i, j, idx;
+	int temp;
 
 	if (array == NULL)
 		return;
 
-	for (i = 0; i < size - 1; i++)
+	for (i = 0; i < (size - 1); i++)
 	{
 
 		idx = i;
@@ -30,11 +30,13 @@ void selection_sort(int *array, size_t size)
 			}
 
 		}
-		temp = array[i];
-		array[i] = array[idx];
-		array[idx] = temp;
+		if (idx != i)
+		{
+			temp = array[i];
+			array[i] = array[idx];
+			array[idx] = temp;
 
-	
+		}
 		print_array(array, size);
 
 
